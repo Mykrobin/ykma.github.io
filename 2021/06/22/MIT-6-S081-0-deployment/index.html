@@ -19,7 +19,7 @@
 
     <title>MIT-6.S081-0-deployment | MYKRobin&#39;s Realm</title>
 
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/mykrobin/cdn/images/bear_icon.png">
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/LavaBeastMurfitt/cdn/images/bear_icon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -56,7 +56,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/mykrobin/cdn/images/bear_icon.png" class="logo-img" alt="LOGO">
+                    <img src="https://cdn.jsdelivr.net/gh/LavaBeastMurfitt/cdn/images/bear_icon.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">MYKRobin&#39;s Realm</span>
                 </a>
@@ -267,6 +267,15 @@
       </li>
       
       <li>
+        <a href="/CCFDDL">
+          
+          <i class="fas fa-paperclip" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Conferences</span>
+        </a>
+      </li>
+      
+      <li>
         <a href="/books">
           
           <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
@@ -291,7 +300,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/mykrobin/cdn/images/bear_icon.png" class="logo-img circle responsive-img">
+        <img src="https://cdn.jsdelivr.net/gh/LavaBeastMurfitt/cdn/images/bear_icon.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">MYKRobin&#39;s Realm</div>
         <div class="logo-desc">
@@ -520,6 +529,16 @@
               
                 <li>
 
+                  <a href="/CCFDDL " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-paperclip" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Conferences</span>
+                  </a>
+                </li>
+              
+                <li>
+
                   <a href="/books " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
@@ -715,7 +734,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-06-25
+                    2021-07-29
                 </div>
                 
 
@@ -808,13 +827,13 @@ git branch --all
 <pre><code class="lang-bash">make qemu
 </code></pre>
 <p><strong>结果如下</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/mykrobin/cdn/images/MIT-6.S081-make-qemu.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LavaBeastMurfitt/cdn/images/MIT-6.S081-make-qemu.png" alt=""></p>
 <p>退出命令：<code>Ctrl+a</code>之后按<code>x</code>退出qemu</p>
 <p><strong>验证调试器</strong></p>
 <p><strong>一个窗口运行qemu </strong>  <code>make qemu-gdb</code></p>
 <p><strong>另一个窗口运行gdb </strong> <code>gdb-multiarch -q kernel/kernel</code></p>
 <p><strong>第一次运行，根据提示设置好 .gdbinit</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/mykrobin/cdn/images/MIT-6.S081-gdb.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LavaBeastMurfitt/cdn/images/MIT-6.S081-gdb.png" alt=""></p>
 <p>如果输入<code>gdb-multiarch -q kernel/kernel</code>出现上图结果，则说明环境ok.</p>
 <h2 id="连接远端仓库"><a href="#连接远端仓库" class="headerlink" title="连接远端仓库"></a>连接远端仓库</h2><p>查看远程仓库 <code>git remote -v</code></p>
 <p>添加MIT远程仓库 <code>git remote add labs git://g.csail.mit.edu/xv6-labs-2020</code></p>
@@ -1649,7 +1668,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">83.2k</span>&nbsp;字
+                class="white-color">83.4k</span>&nbsp;字
             
             
             
@@ -1720,6 +1739,8 @@ new Valine({
             </span>
             
         </div>
+        <!--增加访问者地图-->
+        <a href="https://clustrmaps.com/site/1bied" target="_blank" rel="noopener" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=DvmDnzhya3QqdWXT_VAqZb9vgqxsE0O0E3Mhb_DrDNE&cl=ffffff"></a>
         <div class="col s12 m4 l4 social-link social-statis">
 
 
@@ -1736,6 +1757,7 @@ new Valine({
 
 
 </div>
+
     </div>
 </footer>
 
@@ -1971,10 +1993,6 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
-
-    <!--增加访问者地图-->
-    <!--TODO：需要更改为侧边栏显示-->
-    <a href="https://clustrmaps.com/site/1bied" target="_blank" rel="noopener" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=DvmDnzhya3QqdWXT_VAqZb9vgqxsE0O0E3Mhb_DrDNE&cl=ffffff"></a>
 
     <!--增加动态线条背景-->
     <!-- <script type="text/javascript" -->

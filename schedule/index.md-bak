@@ -1,0 +1,206 @@
+---
+title: Reading-Schedule
+date: 2021-06-23 10:21:08
+tags:
+---
+
+ <center>
+     <h1>Description</h1>
+ </center>
+
+---
+
+这篇博文用于记录个人的读书目标与完成进度，实时更新，方便时刻查看。
+
+## Target Overview
+
+---
+
+**Operating System and Architecture**
+
+---
+
++ xv6
++ 《操作系统导论》 [Link](https://pages.cs.wisc.edu/~remzi/OSTEP/)
++ 交通大学 《现代操作系统》 （注重系统安全）[Link](https://ipads.se.sjtu.edu.cn/courses/os/schedule.shtml)
++ 清华大学 《高级操作系统》 [Link](https://cloud.tsinghua.edu.cn/d/339de5f93d8c420ebbb7/?p=%2F&mode=list)
++ 《深入理解计算机系统》
++ 《深入理解Linux系统内核 v3》
++ 《系统虚拟化 原理与实现》
++ 《Xen 虚拟化技术》
++ DDIA
+
+**Learning Schedule**
+
+---
+
++ 北京理工大学密码学 [Link](https://www.bilibili.com/video/BV1FV41177Nk)
++ C++面向对象程序设计 [Link](https://www.icourse163.org/learn/PKU-1002029030?tid=1206489201#/learn/announce)
+
+## Undergoing Details
+
+---
+
+### xv6
+
+---
+
+| 序号  | 名称                          | 进度                                                    | 完成时间      |
+| :---: | :---------------------------- | ------------------------------------------------------- | ------------- |
+| xv6-1 | Operating system interfaces   | <img src = "https://progress-bar.dev/100/" width= "80"> | 2021年6月23日 |
+| xv6-2 | Operating system organization | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| xv6-3 | Page tables                   | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| xv6-4 | Traps and system calls        | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| xv6-5 | Interrupts and device drivers | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| xv6-6 | Locking                       | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| xv6-7 | Scheduling                    | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| xv6-8 | File system                   | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| xv6-9 | Concurrency revisited         | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+
+### MIT-6.S081
+
+---
+
+|  序号  | 名称                       | 进度                                                    | 完成时间      |
+| :----: | -------------------------- | ------------------------------------------------------- | ------------- |
+| lab-1  | Unix utilities             | <img src = "https://progress-bar.dev/100/" width= "80"> | 2021年6月24日 |
+| lab-2  | system calls               | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| lab-3  | page tables                | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| lab-4  | traps                      | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| lab-5  | xv6 lazy page allocation   | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| lab-6  | Copy-on-Write Fork for xv6 | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| lab-7  | Multithreading             | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| lab-8  | locks                      | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| lab-9  | file system                | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| lab-10 | mmap                       | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+| lab-11 | networking                 | <img src = "https://progress-bar.dev/0/" width= "80">   | TBD           |
+
+### 《操作系统导论》
+
+---
+
+### 交通大学 《现代操作系统》
+
+---
+
+建议，着重看夏虞斌老师的系统安全，看课件，辅助参考对应书籍
+
+### 清华大学 《高级操作系统》
+
+---
+
+注：该学习资源中缺失LEC9\10内容，建议听视频，看PPT
+
+|  序号  | 名称                                                         | 进度                                                  | 完成时间 |
+| :----: | ------------------------------------------------------------ | ----------------------------------------------------- | -------- |
+| LEC-1  | Advanced OS Overview                                         | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD      |
+| LEC-2  | OS Architecture                                              | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD      |
+| LEC-3  | Virtual Machine Monitor                                      | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD      |
+| LEC-4  | Optimization of Virtual Machine Monitor                      | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD      |
+| LEC-5  | The Interface of OS                                          | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD      |
+| LEC-6  | The Programming Languages of OS                              | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD      |
+| LEC-11 | Scalable Synchronization on Shared-Memory Multiprocessors    | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD      |
+| LEC-12 | Scalable Synchronization on Shared-Memory Multiprocessors-II | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD      |
+| LEC-14 | Concurrency in OS kernel                                     | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD      |
+
+### 《深入理解计算机系统》
+
+----
+
+| 序号  | 名称                          | 进度                                                    | 完成时间      |
+| :---: | :---------------------------- | ------------------------------------------------------- | ------------- |
+| chapter-1 | Introduction                | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-2 | 信息的表示和处理          | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-3 | 程序的机器级表示       | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-4 | 处理器体系结构            | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-5 | 优化程序性能                | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-6 | 存储器结构层次            | <img src = "https://progress-bar.dev/100/" width= "80"> | 2019年12月12日 |
+| chapter-7 | 连接                | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-8 | 异常控制流             | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-9 | 虚拟内存         | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-10 | 系统级I/O          | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-11 | 网络编程        | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-12 | 并发编程                | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+
+### 《深入理解Linux系统内核 v3》
+
+----
+
+| 序号  | 名称                          | 进度                                                    | 完成时间      |
+| :---: | :---------------------------- | ------------------------------------------------------- | ------------- |
+| chapter-1 | Introduction                | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-2 | Memory Addressing     | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-3 | Processes                | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-4 | Interrupts and Exceptions | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-5 | Kernel Synchronization | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-6 | Timing Measurements | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-7 | Process Scheduling | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-8 | Memory Management | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-9 | Process Address Space | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-10 | System Calls     | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-11 | Signals          | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-12 | The Virtual Filesystem | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-13 | I/O Architecture and Device Drivers | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-14 | Block Device Drivers | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-15 | The Page Cache   | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-16 | Accessing Files | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-17 | Page Frame Reclaiming | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-18 | The Ext2 and Ext3 Filesystems | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-19 | Process Communication | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-20 | Program Execution | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+
+### 《系统虚拟化 原理与实现》
+
+---
+
+| 序号  | 名称                          | 进度                                                    | 完成时间      |
+| :---: | :---------------------------- | ------------------------------------------------------- | ------------- |
+| chapter-1 | Introduction                | <img src = "https://progress-bar.dev/20/" width= "80"> | TBD           |
+| chapter-2 | x86架构及操作系统概述 | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-3 | 虚拟化概述     | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-4 | 基于软件的完全虚拟化      | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-5 | 硬件辅助虚拟化        | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-6 | 类虚拟化技术       | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD |
+| chapter-7 | 虚拟环境性能和优化         | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-8 | 虚拟化技术的应用模式   | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-9 | 前沿虚拟化技术      | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+
+### 《Xen 虚拟化技术》
+
+---
+
+| 序号  | 名称                          | 进度                                                    | 完成时间      |
+| :---: | :---------------------------- | ------------------------------------------------------- | ------------- |
+| chapter-1 | Introduction                | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-2 | Xen体系结构      | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-3 | Xen信息页    | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-4 | 超级调用和事件通道       | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-5 | 授权表             | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-6 | CPU虚拟化      | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD |
+| chapter-7 | 内存虚拟化           | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-8 | IO设备虚拟化      | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-9 | Xen访问控制模块   | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-10 | 可信平台模块虚拟化   | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-11 | 硬件虚拟化   | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+
+### 《C++面向对象程序设计》
+
+---
+
+注：该部分可以更新在博客园中
+
+| 序号  | 名称                          | 进度                                                    | 完成时间      |
+| :---: | :---------------------------- | ------------------------------------------------------- | ------------- |
+| chapter-1 | 从C到C++          | <img src = "https://progress-bar.dev/100/" width= "80"> | TBD           |
+| chapter-2 | 类和对象基础 | <img src = "https://progress-bar.dev/100/" width= "80"> | TBD           |
+| chapter-3 | 类和对象提高 | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-4 | 运算符重载  | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-5 | 继承           | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-6 | 多态  | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD |
+| chapter-7 | 输入输出和模板           | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-8 | 标准模板库STL（一）      | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-9 | 标准模板库STL（二）      | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+| chapter-10 | C++11新特性和C++高级主题 | <img src = "https://progress-bar.dev/0/" width= "80"> | TBD           |
+
+## Finished Schedule
+
