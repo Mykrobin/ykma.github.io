@@ -1,104 +1,1715 @@
 <!DOCTYPE HTML>
-<html lang="<%= config.language %>">
-<%- partial('_partial/head') %>
+<html lang="en">
+
+
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <meta name="keywords" content="Applying TPM to Cloud, MYKRobin&#39;s Realm">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Applying TPM to Cloud | MYKRobin&#39;s Realm</title>
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/LavaBeastMurfitt/cdn/images/bear_icon.png">
+    <link rel="stylesheet" type="text/css" href="/libs/artitalk/artitalk.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
 
 <body>
-    <%- partial('_partial/header') %>
-    <%- body %>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/LavaBeastMurfitt/cdn/images/bear_icon.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">MYKRobin&#39;s Realm</span>
+                </a>
+            </div>
+            
 
-    <%- partial('_partial/footer') %>
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>主页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
 
-    <%- partial('_partial/search') %>
-    <%- partial('_partial/back-top') %>
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>系列文章</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/tags/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>paper</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/tags/essay/">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>essay</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/tags/Xen-log/">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>technical note</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/tags/">
+          
+          <i class="fas fa-tags" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>All tags</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>论文阅读</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>时光轴</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
 
-    <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.materialize) %>"></script>
-    <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.masonry) %>"></script>
-    <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.aos) %>"></script>
-    <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.scrollProgress) %>"></script>
-    <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.lightgallery) %>"></script>
-    <script src="<%- theme.jsDelivr.url %><%- url_for('/js/matery.js') %>"></script>
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于我</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/contact">
+          
+          <i class="fas fa-comments" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>留言板</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/artitalk">
+          
+          <i class="fas fa-comment" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>垃圾话箱</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
 
-    <%- partial('_partial/baidu-analytics') %>
-    <%- partial('_partial/baidu-push') %>
-    <% if (theme.clicklove.enable) { %>
-    <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.clicklove) %>" async="async"></script>
-    <% } %>
-    <% if (theme.busuanziStatistics && theme.busuanziStatistics.enable) { %>
-    <script async src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.busuanzi) %>"></script>
-    <% } %>
 
-    <% if (theme.tidio.enable) { %>
-        <script src="//code.tidio.co/<%- theme.tidio.public_key %>.js"></script>
-        <script>
-            $(document).ready(function () {
-                setInterval(change_Tidio, 50);
-                function change_Tidio() {
-                    var tidio=$("#tidio-chat iframe");
-                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
-                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"<%if(theme.toc.showToggleBtn){%>85px<%}else{%>20px<%}%>":"20px";
-                        document.getElementById("tidio-chat-iframe").style.right="-15px";
-                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
-                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
-                    }
-                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
-                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;
-                        document.getElementById("tidio-chat-iframe").style.right="-15px";
-                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
-                    }
-                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
-                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
-                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
-                    }
-                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
-                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="https://cdn.jsdelivr.net/gh/LavaBeastMurfitt/cdn/images/bear_icon.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">MYKRobin&#39;s Realm</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			主页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-tags"></i>
+			
+			系列文章
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/tags/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/ " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>paper</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/tags/essay/ " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>essay</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/tags/Xen-log/ " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>technical note</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/tags/ " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-tags" style="position: absolute;left:50px" ></i>
+			      
+		          <span>All tags</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			论文阅读
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			时光轴
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-user-circle"></i>
+			
+			关于我
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/contact " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-comments" style="position: absolute;left:50px" ></i>
+			      
+		          <span>留言板</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/artitalk " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-comment" style="position: absolute;left:50px" ></i>
+			      
+		          <span>垃圾话箱</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Applying TPM to Cloud</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+     .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+        background-color: rgb(255, 255, 255,0.7);
+        border-radius: 10px;
+        box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0 2px 5px -5px rgba(0, 0, 0, .1) !important;
+    }
+
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/TPM/">
+                                <span class="chip bg-color">TPM</span>
+                            </a>
+                        
+                            <a href="/tags/Security/">
+                                <span class="chip bg-color">Security</span>
+                            </a>
+                        
+                            <a href="/tags/Cloud-Computing/">
+                                <span class="chip bg-color">Cloud Computing</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">
+                                <span class="chip bg-color">可信计算</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Security-and-Privacy/" class="post-category">
+                                Security and Privacy
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2020-10-12
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2021-06-11
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    2.8k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    10 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:left">属性</th>
+<th style="text-align:center">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:left">原文PDF</td>
+<td style="text-align:center"><a href="https://sci-hub.se/10.1002/spy2.93" target="_blank" rel="noopener">Survey</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:left">作者信息</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:left">核心内容</td>
+<td style="text-align:center">调研了13年至18年的近120篇文献，且这些论文都利用TPM提高云计算安全。</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:left">研究领域</td>
+<td style="text-align:center">可信计算</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:left">全文总览</td>
+<td style="text-align:center">本文对TPM在云计算安全方面进行的细致的调研，并结合调研结果认为TPM在云计算安全的保护领域具有很大的趋势。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="Paper-Source"><a href="#Paper-Source" class="headerlink" title="Paper Source"></a>Paper Source</h3><p><img src="/2020/10/12/Applying-TPM-to-Cloud/sources.png" width="500"></p>
+<p><img src="/2020/10/12/Applying-TPM-to-Cloud/papercountry.png" width="500"></p>
+<font color="DodgerBlue"> Paper Structure </font>
+
+<p><img src="/2020/10/12/Applying-TPM-to-Cloud/Summary.png" width="600"></p>
+<h3 id="Answering-the-Following-Question"><a href="#Answering-the-Following-Question" class="headerlink" title="Answering the Following Question"></a>Answering the Following Question</h3><h4 id="RQ1-For-what-purposes-is-TPM-used-in-the-cloud"><a href="#RQ1-For-what-purposes-is-TPM-used-in-the-cloud" class="headerlink" title="RQ1: For what purposes is TPM used in the cloud?"></a>RQ1: For what purposes is TPM used in the cloud?</h4><blockquote>
+<p><strong>TPM 在云中的作用是什么？为什么要用到TPM？</strong></p>
+</blockquote>
+<h4 id="RQ2-What-types-of-threats-have-been-reportedly-mitigated-via-the-utilization-of-TPM-in-cloud"><a href="#RQ2-What-types-of-threats-have-been-reportedly-mitigated-via-the-utilization-of-TPM-in-cloud" class="headerlink" title="RQ2: What types of threats have been reportedly mitigated via the utilization of TPM in cloud?"></a>RQ2: What types of threats have been reportedly mitigated via the utilization of TPM in cloud?</h4><blockquote>
+<p><strong>TPM的确缓解了的云中的哪些攻击？</strong></p>
+</blockquote>
+<h4 id="RQ3-What-is-the-exact-component-of-the-assessment？What-interpretations-are-given-for-integrity-in-cloud？"><a href="#RQ3-What-is-the-exact-component-of-the-assessment？What-interpretations-are-given-for-integrity-in-cloud？" class="headerlink" title="RQ3: What is the exact component of the assessment？What interpretations are given for integrity in cloud？"></a>RQ3: What is the exact component of the assessment？What interpretations are given for integrity in cloud？</h4><blockquote>
+<p><strong>完整性度量的组件到底是什么？云中完整性度量的解释是什么？</strong></p>
+</blockquote>
+<h4 id="RQ4-At-what-level-are-TPM-primitives-invoked"><a href="#RQ4-At-what-level-are-TPM-primitives-invoked" class="headerlink" title="RQ4: At what level are TPM primitives invoked?"></a>RQ4: At what level are TPM primitives invoked?</h4><blockquote>
+<p><strong>TPM被调用的级别是什么？</strong></p>
+</blockquote>
+<h4 id="RQ5-At-which-phase-are-the-TPM-features-used"><a href="#RQ5-At-which-phase-are-the-TPM-features-used" class="headerlink" title="RQ5: At which phase are the TPM features used?"></a>RQ5: At which phase are the TPM features used?</h4><blockquote>
+<p><strong>在什么阶段用到了TPM？</strong><br><strong>A：boot time, run time and both.</strong></p>
+</blockquote>
+<p><img src="/2020/10/12/Applying-TPM-to-Cloud/Phase.png"></p>
+<h3 id="TPM"><a href="#TPM" class="headerlink" title="TPM"></a>TPM</h3><p>​        可信计算利用硬件信任根以及与之关联的软件构建可信环境，提供信任和隐私保护。TPM这个模块，提供安全启动、远程验证、完整性检测以及机密功能。2011年发布了TPM1.2版本，2016年公布了TPM2.0版本。</p>
+<p>​        远程证明是可信计算技术提供的主要功能，它将信任逐步从较低级别扩展到较高级别和应用程序。 这被称为信任链。 在信任链方案中，所有将要加载的组件都被认为是不可信的，因此，在加载之前需要对其进行测量。 TPM包含平台配置寄存器（PCR）受保护的内存位置，该位置存储敏感的安全信息（例如测量信息）。</p>
+<p>​        除了强大的隔离存储，TPM还拥有用于加密操作的唯一认可密钥（EK）。该密钥是在TPM制造时生成的，密钥的私有部分永远不会离开TPM。 在远程认证时，为了保护平台身份的私密性，使用了认证身份密钥（AIK）。 当平台（证明者）收到（来自验证者的）远程证明请求时，它会发送一个完整性报告，该报告由PCR值及其数字签名（由AIK计算）组成。 由于AIK的私有部分从未离开过TPM，因此可以保证报告的完整性和真实性。</p>
+<p>​        初步理解，TPM有几种存在模式，比如：以芯片方式存在电脑主板上或者以firmware形式存在于BIOS中。</p>
+<h4 id="The-Aims-of-TPM"><a href="#The-Aims-of-TPM" class="headerlink" title="The Aims of TPM"></a>The Aims of TPM</h4><p><img src="/2020/10/12/Applying-TPM-to-Cloud/TPMAims.png" width="500" height="280"></p>
+<font color="DodgerBlue"> 远程验证（Remote Attestation ）</font>
+
+<blockquote>
+<ol>
+<li>请求验证者向被验证者发送验证请求，这个请求中包括 <em>nonce</em><sup><a href="#fn_1" id="reffn_1">1</a></sup> ，目的是防止重播攻击（Replay attack）</li>
+<li>接收到验证请求的一方向自己的TPM提出验证请求，TPM验证自身需要度量的模块</li>
+<li>验证后的结果发送给远端的验证发起者（发起者要验证(a)TPM 的真实性(b) 发送数值的真实性）</li>
+</ol>
+</blockquote>
+<font color="DodgerBlue"> 完整性度量 （Integrity Measurement）</font>
+
+<blockquote>
+<p>TPM计算并存储不同组件的哈希值，并将这些哈希值在哈希链中进行转换，并将结果与已经存储的数值相比较。<br>完整性度量分为静态与动态两种类型：<br>        静态：保证在运行之前没有发生篡改<br>        动态：保证在运行过程中没有发生恶意篡改</p>
+</blockquote>
+<font color="DodgerBlue"> Generation and secure storage ofkeys</font>
+
+<blockquote>
+<p>生成随机秘钥的方法：种子、随机数生成器、直接导入TPM中。<br>生成的秘钥保存在TPM中</p>
+</blockquote>
+<font color="DodgerBlue"> Trusted boot</font>
+
+<blockquote>
+<p>在开机时，TPM会检查硬件、软件、固件组件的异同，保证在启动系统之前的环境是可信的。</p>
+<p>本文的参考文献 [14] 利用TPM的可信启动构造一个可信的环境，保证在开机过程中没有恶意入侵。<br>[15] 提出一个用于监控整个云平台的框架，可信启动保证被监控环境的完整性，既对云中租户也是针对云供应商。</p>
+</blockquote>
+<font color="DodgerBlue"> Hardware root of trust</font>
+
+<blockquote>
+<p>信任根是可以在密码系统中信任的来源，加密安全依赖于秘钥来进行加密解密与生成或者验证数字签名，因此，在这种系统中包括不易损坏的硬件模块，并且提供了一定程度的信任保障。<br>TPM可以提供硬件信任根、提供开机与运行时的完整性度量并且保护度量结果。</p>
+</blockquote>
+<h4 id="Security-Threats"><a href="#Security-Threats" class="headerlink" title="Security Threats"></a>Security Threats</h4><p><img src="/2020/10/12/Applying-TPM-to-Cloud/TopThreats.png" width="380" height="500"></p>
+<h4 id="The-level-of-TPM-invoking"><a href="#The-level-of-TPM-invoking" class="headerlink" title="The level of TPM invoking"></a>The level of TPM invoking</h4><font color="DodgerBlue"> Hardware </font>
+
+<blockquote>
+<p>在IoT和云计算等分布式系统模型中，主机平台的安全性至关重要，因为它托管着存储或处理（大量）数据。 TPM是一种用于平台身份验证以及验证其完整性的强大解决方案。在参考文献90中提出的解决方案中，扩展了HCloud（用于医疗保健数据的私有云），并且TPM嵌入在主机平台上以对客户端进行身份验证，并测量静态和动态完整性。讨论了可信云可以提供外部认证服务并进行内部可信调度。提供给外部的每个服务都有一个唯一的映像/进程在内存中运行。加载到内存时，需要验证此过程。可以使用TPM执行静态测量，以验证存储在物理存储库中的文件和软件包。同样，使用TPM签名保护数据库的完整性，以提供硬件级别的安全性。对于过程的动态完整性测量，TPM PCR用于存储和显示逐步的测量值。 Yang等[86]提出了一种设计，旨在为客户提供有关存储在云中的数据的新鲜度，有效性和完整性的保证。为了实现此目标，他们在不受信任的服务器上使用受信任的硬件设备，使客户端能够验证其数据的新鲜度和完整性。在系统运行之前，需要验证平台是否以受信任的方式启动。参考文献91讨论TPM是衡量启动过程和确定平台启动完整性的关键步骤的信任基础。在虚拟环境中，TPM提供了根植于硬件的信任链，该信任链将扩展到虚拟机管理程序。如果关键组件（例如BIOS，固件和虚拟机管理程序）已证明其完整性，则可以确保平台引导的完整性。为了确保启动组件的完整性，需要执行两个步骤：首先，测量引导过程，其次，进行证明，即保证和已执行的组件是受信任的组件。</p>
+</blockquote>
+<font color="DodgerBlue"> Hypervisor </font>
+
+<blockquote>
+<p>本文参考文献28构造了基于Xen的迁移框架：</p>
+<p>Xen虚拟机管理程序的安全迁移框架。该设计使用可信计算和相邻完整性度量来动态监视相邻虚拟机管理程序的完整性。更具体地说，为确保始终监视主机，当主机初始化时，TPM模块会验证虚拟机监控程序并将更新消息发送到完整性验证表（该表包含受信任的虚拟机监控程序列表），并将该虚拟机监控程序标记为受信任的。这意味着，如果未收到此类消息，则认为该特定的管理程序不可信。此外，系统会动态监控虚拟机监控程序的运行状态，如果虚拟机监控程序遭到破坏，则会发送相应的更新消息以报告受到破坏的情况。根据此完整性表的结果，确定源虚拟机管理程序是否受信任以及是否应启动VM迁移过程。</p>
+</blockquote>
+<h4 id="Phase-of-integrity-measurement"><a href="#Phase-of-integrity-measurement" class="headerlink" title="Phase of integrity measurement"></a>Phase of integrity measurement</h4><font color="DodgerBlue"> Boot time </font>
+
+<blockquote>
+<p>可信平台技术追求的原则之一是在关键组件加载和执行之前验证它们的信任和完整性。因此，在运行时完整性检查之前，需要确保正确引导了系统并且正在运行适当的操作系统。受信任的平台通过创建信任链来实现这种信任，该信任链以BIOS引导块中的受信任代码（CRTM）为核心信任根。 CRTM衡量其他实体的完整性价值，并且在平台的整个生命周期内保持不变。 CRTM是普通BIOS的补充，它首先运行以测量BIOS块和硬件，然后将控制权传递给引导加载程序。然后在将控件传递给OS之前测量OS内核映像。在此引导过程的每个步骤中，都会获取测量值，并据此扩展相关的TPM PCR值。该测量过程证明了系统的完整性，并确保引导和操作系统软件是制造商想要的版本，并且未被恶意第三方或恶意软件篡改。100Nanavati等人74指出，在虚拟环境中，可信引导技术允许用户证明基础启动平台的身份，并确保加载的虚拟化平台值得信赖。这为用户提供了有关可以向其提交关键数据的虚拟化平台的具体保证。 TPM通过使用加密原语为虚拟化平台提供此受信任的引导，并为其建立信任根。在ALIBI可信监视框架中，17 TPM用于在服务提供商平台上提供信任根。 TPM PCR记录平台上正在执行的软件的状态，并且由于PCR值仅是附加值，因此仅通过重新启动才能消除以前的记录。 TPM还拥有一个公共-私人密钥对。私钥仅保留在TPM的安全环境中，并用于计算TPM生成的证明值（从经过身份验证的启动累积的度量）的签名。使用TPM的公钥，外部验证程序可以检查签名的有效性，并推断出PCR值表示平台软件的状态。</p>
+</blockquote>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>​        本文所统计并分析了120篇文献后，认为TPM技术在云中应用是一种趋势。在云中TPM技术的主要目标是远程验证以及完整性度量。本文主要分析了TPM的功能，TPM可应对云中的安全威胁，TPM提供完整性度量的阶段以及层次并指出了留有的研究空间，最后指出主要的研究差距。</p>
+<blockquote id="fn_1">
+<sup>1</sup>. 在加密技术中的初始向量和加密散列函数都发挥着重要作用，在各类验证协议的通信应用中确保验证信息不被重复使用以对抗重放攻击(Replay Attack)<a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
+</blockquote>
+<h3 id="引文延伸阅读"><a href="#引文延伸阅读" class="headerlink" title="引文延伸阅读"></a>引文延伸阅读</h3><p>Here are the papers worth reading further.</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>theme</th>
+<th>Reference Number &amp; Summary</th>
+<th>Reference Number &amp; Summary</th>
+<th>more</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>远程验证</td>
+<td>6：TPM进行远程验证VMs</td>
+<td>7：验证用户所在地理位置</td>
+<td></td>
+</tr>
+<tr>
+<td>完整性度量</td>
+<td>10：多用户环境中数据拥有完整性</td>
+<td>11：动态的完成性度量的模型（Xen）</td>
+<td>8、9</td>
+</tr>
+<tr>
+<td>生成秘钥安全存储</td>
+<td>12</td>
+<td>13</td>
+<td></td>
+</tr>
+<tr>
+<td>安全启动</td>
+<td><a href="https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=2969&amp;context=sis_research" target="_blank" rel="noopener">14</a>：protect the hypervisor</td>
+<td>15 ：monitoring the cloud platform</td>
+<td></td>
+</tr>
+<tr>
+<td>硬件信任根</td>
+<td>17 25 33 34 35</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><p>[1] <a href="https://www.zhihu.com/question/19790488/answer/19290308" target="_blank" rel="noopener">什么是彩虹表？</a> </p>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Mykrobin</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://mykrobin.github.io/2020/10/12/Applying-TPM-to-Cloud/">http://mykrobin.github.io/2020/10/12/Applying-TPM-to-Cloud/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint polocy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Mykrobin</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/TPM/">
+                                    <span class="chip bg-color">TPM</span>
+                                </a>
+                            
+                                <a href="/tags/Security/">
+                                    <span class="chip bg-color">Security</span>
+                                </a>
+                            
+                                <a href="/tags/Cloud-Computing/">
+                                    <span class="chip bg-color">Cloud Computing</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">
+                                    <span class="chip bg-color">可信计算</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+    .v[data-class=v] .vinput {
+        padding: 0px 0px;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        admin_email: '16463223@qq.com',
+        appId: 'TQoSJURtHV79SlSIY05Bp3CG-MdYXbMMI',
+        appKey: 'OI3JEKn76jXxfMSYGR1lfaWC',
+        path: window.location.pathname,
+        comment_count: true,
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'en',
+        placeholder: 'just go go',
+
+    });
+    $(document).ready(function(){
+        $("#vcomments").on('click', 'span.vat',function(){
+            $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+            $('textarea#veditor').focus();
+        })
+    })
+</script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+    jinrishici.load(function(result) {
+        var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+        document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+    });
+</script>
+
+<!-- 直达评论 -->
+<div id="to_comment" class="comment-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#vcomments" title="直达评论">
+        <i class="fas fa-comments"></i>
+    </a>
+</div>
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2020/10/18/CloudVisor-D/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="CloudVisor-D">
+                        
+                        <span class="card-title">CloudVisor-D</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+
+
+
+序号
+属性
+内容
+
+
+
+
+1
+原文PDF
+CloudViso-D
+
+
+2
+作者信息
+IPADS，Shanghai Jiao Tong University
+
+
+3
+核心内容
+Untrusted Hypervisor，解耦是嵌套虚拟化
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-18
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Security/" class="post-category">
+                                    Security
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/">
+                        <span class="chip bg-color">论文解读</span>
+                    </a>
+                    
+                    <a href="/tags/Untrusted-Hypervisor/">
+                        <span class="chip bg-color">Untrusted Hypervisor</span>
+                    </a>
+                    
+                    <a href="/tags/Virtualization/">
+                        <span class="chip bg-color">Virtualization</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/10/09/Xen-log-3-Using-Serial-Debug-Xen/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Xen log 3 Using Serial Debug Xen">
+                        
+                        <span class="card-title">Xen log 3 Using Serial Debug Xen</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            注：本文的配置是在官网指导下进行的，因为在配置过程中遇到一点问题，记录下配置过程。
+Xen的log信息是打印在内存中的，读取打印信息需要xl dm 进行查看，如果在查看之前xen崩溃的话，是读取不到任何信息的，通过串口的方式可以将数据实时的
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Mykrobin
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Virtualization/">
+                        <span class="chip bg-color">Virtualization</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/Xen-log/">
+                        <span class="chip bg-color">Xen log</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">Mykrobin</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">78.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "4";
+                    var startDate = "18";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
                     }
                 }
-            });
-        </script>
-    <% } %>
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+            <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">鲁ICP备88888888</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Mykrobin" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
 
-    <% if (theme.daovoice.enable) { %>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i["DaoVoiceObject"] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            a.charset = "utf-8";
-            m.parentNode.insertBefore(a, m)
-        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
-            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
-        daovoice('init', {
-            app_id: "<%- theme.daovoice.app_id %>"
-        });
-        daovoice('update');
-    </script>
-    <% } %>
 
-    <% if (theme.canvas_nest.enable) { %>
-    <script type="text/javascript" color="<%- theme.canvas_nest.color %>"
-        pointColor="<%- theme.canvas_nest.pointColor %>" opacity='<%- theme.canvas_nest.opacity %>'
-        zIndex="<%- theme.canvas_nest.zIndex %>" count="<%- theme.canvas_nest.count %>"
-        src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.canvas_nest) %>"></script>
-    <% } %>
 
-    <% if (theme.ribbon.enable) { %>
-    <% var ribbonSrc = theme.ribbon.clickChange ? theme.libs.js.ribbon : theme.libs.js.ribbonRefresh; %>
-    <script type="text/javascript" size="<%- theme.ribbon.size %>" alpha='<%- theme.ribbon.alpha %>'
-        zIndex="<%- theme.ribbon.zIndex %>" src="<%- theme.jsDelivr.url %><%- url_for(ribbonSrc) %>" async="async"></script>
-    <% } %>
+    <a href="mailto:964766330@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
 
-    <% if (theme.ribbon_dynamic.enable) { %>
-    <script type="text/javascript" src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.ribbon_dynamic) %>" async="async"></script>
-    <% } %>
 
-    <% if (theme.instantpage.enable) { %>
-    <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.instantpage) %>" type="module"></script>
-    <% } %>
-   
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=964766330" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 964766330" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    <!-- <script type="text/javascript">
+    //只在桌面版网页启用樱花特效
+    var windowWidth = $(window).width();
+    if (windowWidth > 768) {
+        document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+    }
+    </script> -->
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
 
 </body>
 
